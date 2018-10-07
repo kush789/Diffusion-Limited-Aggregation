@@ -14,7 +14,7 @@ The only requirements are numpy, matplotlib and joblib. A requirements.txt file 
 
 `pip install -r requirements.txt`
 
-You can either run the notebooks, or import the `DLA` class from `DLAClass.py` for your experiments.
+You can either run the notebooks, or import the `DLA` class from `dlaClass.py` for your experiments.
 
 ### Stickiness Estimation
 
