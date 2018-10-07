@@ -2,9 +2,11 @@
 
 An implementation of the Diffusion Limited Aggregation algorithm on a 2D grid with a central point attractor. A detailed description of the algorithm is present [here](http://paulbourke.net/fractals/dla/). We also suggest a technique to estimate the stickiness factor `k` for a given aggregate from a DLA output.
 
-We make an optimization to initialize a new particle at the minimum bounding cirlce of the aggregate, rather than the square boundary of the grid. Proof of correctness for the same (under some assumptions) can be found in the file `Optimization Proof.pdf`
+The basic version of the algorithm can be found in the notebook `Diffusion+Limited+Aggregation.ipynb`. However, this is terribly slow. The running time increases exponentially as the size of the grid increases (since search space increases). To quicken the simulations, we make an alteration to the original algorithm. Initialization of a new particle is done at any point on the minimum bounding circle of the aggregate, rather than the square boundary of the grid. The implementation of DLA with this optimization can be found in `Diffusion+Limited+Aggregation+Optimized.ipynb`. 
 
-<img src="k=1.gif" width="250" height="250" /> <img src="k=0.5.gif" width="250" height="250" /> <img src="k=0.1.gif" width="250" height="250" /><br />
+A proof of correctness for the alteration to DLA (under some assumptions) can be found in the file `Optimization Proof.pdf`.
+
+<img src="k=1.gif" width="280" height="280" /> <img src="k=0.5.gif" width="280" height="280" /> <img src="k=0.1.gif" width="280" height="280" /><br />
 <br />
 Output of our DLA implementation at various number of particles. Stickiness factor 1.0, 0.5, 0.1 respectively.
 <hr>
