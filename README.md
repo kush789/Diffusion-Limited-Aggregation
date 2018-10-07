@@ -26,7 +26,10 @@ A detailed analysis can be found in `DLA stickiness analysis.ipynb`. Some exapml
 
 ### Simulation Data
 
-We ran 15 simulations for `n` in `range(100, 20001, 100)`, for values of `k` in `linspace(1e-3, 5e-2, 40)` and recorded `(n, k, surface area)` tuples. All this data can be found in the directories `logFiles` and `logFiles2`. We ran 2 simulations where we ranged the number of particles from 100 to 80000. This data can be found in the directory `logFiles80k`.
+We recorded the value of surface area of the aggregate for different values of n and k. The `(n, k, surface area)` tuples are available for the following simulations
+
+- We ran 15 simulations for `n` in `range(100, 20001, 100)`, for values of `k` in `linspace(1e-3, 5e-2, 40)`. All this data can be found in the directories `logFiles` and `logFiles2`.
+- We ran 2 simulations for `n` in `range(100, 80001, 100)`, for values of `k` in `linspace(1e-3, 5e-2, 40)`. All this data can be found in the directories `logFiles80K`.
 
 
 
